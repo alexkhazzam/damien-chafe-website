@@ -8,15 +8,15 @@ exports.getHomePage = (req, res, next) => {
     websitePingCount: PingModel.fetchPings(),
   });
 
-  //   const websiteNotifications = new websiteNotifications.contactModel();
-  //   HomePageModel.sendEmail()
-  //     .then((data) => {
-  //       if (data) {
-  //         console.log(data);
-  //       }
-  //     })
-  //     .catch((err) => {
-  //       console.log(err);
-  //       throw err;
-  //     });
+  const websiteNotifications = new websiteNotifications.contactModel();
+  HomePageModel.sendEmail()
+    .then((data) => {
+      if (data) {
+        console.log(data);
+      }
+    })
+    .catch((err) => {
+      console.log(err);
+      throw err;
+    });
 };
