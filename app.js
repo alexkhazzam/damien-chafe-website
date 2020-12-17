@@ -12,6 +12,6 @@ app.set('view engine', 'ejs');
 
 app.use('/', (req, res, next) => {
   res.render('home.ejs', {});
-});
+}); // testing
 
 module.exports = app;
