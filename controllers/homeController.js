@@ -1,17 +1,22 @@
-const homePageModel = require('../models/homeModel');
+const websiteNotifications = require('../models/websiteNotifications/websiteNotifications');
+const pings = require('../models/websiteNotifications/pingModel');
 
 exports.getHomePage = (req, res, next) => {
-  res.render('home', {});
+  const PingModel = new pings.pingModel();
+  pings.pingModel.writePing();
+  res.render('home', {
+    websitePingCount: PingModel.fetchPings(),
+  });
 
-  const HomePageModel = new homePageModel.contactModel();
-  HomePageModel.sendEmail()
-    .then((data) => {
-      if (data) {
-        console.log(data);
-      }
-    })
-    .catch((err) => {
-      console.log(err);
-      throw err;
-    });
+  //   const websiteNotifications = new websiteNotifications.contactModel();
+  //   HomePageModel.sendEmail()
+  //     .then((data) => {
+  //       if (data) {
+  //         console.log(data);
+  //       }
+  //     })
+  //     .catch((err) => {
+  //       console.log(err);
+  //       throw err;
+  //     });
 };

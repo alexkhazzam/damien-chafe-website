@@ -1,6 +1,6 @@
 const nodemailer = require('nodemailer');
 
-exports.contactModel = class HandleForm {
+exports.websiteNotifications = class HandleForm {
   constructor() {}
   async wrappedSendMail(mailOptions) {
     const promise = new Promise((resolve, reject) => {

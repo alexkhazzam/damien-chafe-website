@@ -26,25 +26,26 @@ body {
   z-index: -2 !important;
 }
 
-.writeable-text {
-  position: absolute;
-  top: 30%;
+.writeable-text-wrapper {
+  position: relative;
+  margin-top: 30%;
   width: 100%;
   z-index: 100;
-  font-size: 1.5rem;
-  letter-spacing: 2px;
-  color: white;
+  animation: 1s scroll-up-writeable-text-wrapper;
+}
+
+.writeable-text {
   text-align: center;
-  animation: 1s scroll-up-writeable-text;
+  color: white;
+  font-size: 1.5rem;
 }
 
 .cta-actions {
   display: none;
   text-align: center;
   width: 100%;
-  position: absolute;
   animation: 1.5s scroll-up-action-btns;
-  top: 35%;
+  margin-top: 3%;
 }
 
 .cta-btn {
@@ -56,31 +57,42 @@ body {
 
 .slide-underline {
   display: none;
-  position: absolute;
   color: white;
   text-align: center;
+  position: absolute;
+  top: 1.2rem;
   width: 100%;
-  top: 31.1%;
   animation: 2s scroll-right-underline;
 }
 
-@keyframes scroll-up-writeable-text {
+.pings {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  color: white;
+}
+
+.ping-span {
+  font-weight: bold;
+}
+
+@keyframes scroll-up-writeable-text-wrapper {
   from {
-    top: 100%;
+    margin-top: 100%;
   }
 
   to {
-    top: 30%;
+    margin-top: 30%;
   }
 }
 
 @keyframes scroll-up-action-btns {
   from {
-    top: 100%;
+    margin-top: 100%;
   }
 
   to {
-    top: 35%;
+    margin-top: 3%;
   }
 }
 
