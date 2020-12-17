@@ -32,3 +32,7 @@
   transform: translateY(-2px);
   text-shadow: 0 0.5rem 1rem black;
 }
+
+.navbar-collapse {
+  margin-left: 10px !important;
+}
