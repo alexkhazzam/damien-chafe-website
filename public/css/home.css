@@ -1,8 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 
 * {
   box-sizing: border-box;
-  font-family: "Playfair Display", serif;
+  font-family: 'Playfair Display', serif;
 }
 
 body {
@@ -14,7 +14,7 @@ body {
   position: absolute !important;
   width: 100% !important;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("../assets/images/background-image.jpg") !important;
+    url('../assets/images/background-image.jpg') !important;
   background-size: cover !important;
   background-attachment: fixed !important;
   background-position: center !important;
@@ -28,19 +28,68 @@ body {
 
 .writeable-text {
   position: absolute;
-  top: 10%;
+  top: 30%;
   width: 100%;
   z-index: 100;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  color: white;
   text-align: center;
   animation: 1s scroll-up-writeable-text;
 }
 
+.cta-actions {
+  display: none;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  animation: 1.5s scroll-up-action-btns;
+  top: 35%;
+}
+
+.cta-btn {
+  border-radius: 50px !important;
+  padding: 15px 35px 15px 35px !important;
+  letter-spacing: 1px !important;
+  margin: 10px !important;
+}
+
+.slide-underline {
+  display: none;
+  position: absolute;
+  color: white;
+  text-align: center;
+  width: 100%;
+  top: 31.1%;
+  animation: 2s scroll-right-underline;
+}
+
 @keyframes scroll-up-writeable-text {
   from {
-    margin-top: 100%;
+    top: 100%;
   }
 
   to {
-    margin-top: 10%;
+    top: 30%;
+  }
+}
+
+@keyframes scroll-up-action-btns {
+  from {
+    top: 100%;
+  }
+
+  to {
+    top: 35%;
+  }
+}
+
+@keyframes scroll-right-underline {
+  from {
+    left: 100%;
+  }
+
+  to {
+    left: 0%;
   }
 }

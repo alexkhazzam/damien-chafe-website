@@ -1,6 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+* {
+  box-sizing: border-box !important;
+  font-family: 'Playfair Display', serif !important;
+}
+
+.navbar {
+  background-color: #f1f1f1 !important;
+}
+
 .main-nav__link,
 .main-nav__link:link,
 .main-nav__link:visited {
+  color: black !important;
   text-decoration: none;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
