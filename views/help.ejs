@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <%- include("./includes/bootstrap.ejs") %>
+    <link rel="stylesheet" href="/css/help.css">
+</head>
+<body>
+    <%- include("./includes/navbar.ejs") %>
+    <h2 class="help-links"><u>Helpful Links</u></h2>
+    <h4 class="results-for">Results For: "<%= searchedInp %>"</h4>
+    <ul class="main-help-refs">
+        <% if (refs ) { %>
+            <% for (let i = 0; i <= (refs.length - 1); i++) { %>
+                <li class="ref-wrapper"><a class="ref" href=<%= refs[i].split("&")[1] %>><%= refs[i].toUpperCase().split("&")[0] %></a></li>
+            <% } %>
+        <% } %>
+    </ul>
+    <%- include("./includes/footer.ejs") %>
+</body>
+</html>
