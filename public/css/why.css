@@ -20,9 +20,9 @@ body {
   margin: auto;
 }
 
-.tennis-experience:first-of-type {
-  margin-top: 10%;
-  margin-bottom: 10%;
+.tennis-experience {
+  margin-top: 10% !important;
+  margin-bottom: 10% !important;
 }
 
 .ref,
