@@ -22,7 +22,7 @@ body {
 
 .tennis-experience:first-of-type {
   margin-top: 10%;
-  margin-bottom: 8%;
+  margin-bottom: 10%;
 }
 
 .ref,
@@ -46,4 +46,18 @@ body {
   -webkit-transform: translateY(-2px);
   transform: translateY(-2px);
   text-shadow: 0 0.5rem 1rem black;
+}
+
+.experience {
+  animation: 1.5s scroll-up-experience;
+}
+
+@keyframes scroll-up-experience {
+  from {
+    margin-top: 100%;
+  }
+
+  to {
+    margin-top: 10%;
+  }
 }
