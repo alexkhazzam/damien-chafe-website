@@ -1,19 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 
 * {
-  box-sizing: border-box !important;
-  font-family: 'Playfair Display', serif !important;
+  box-sizing: border-box;
+  font-family: 'Playfair Display', serif;
 }
 
-.navbar {
-  background-color: #f1f1f1 !important;
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.tennis-experience {
+  width: 80%;
   box-shadow: 1px 1px 5px rgba(32, 32, 32, 0.87);
+  margin: auto;
 }
 
-.main-nav__link,
-.main-nav__link:link,
-.main-nav__link:visited {
-  color: black !important;
+.tennis-experience:first-of-type {
+  margin-top: 10%;
+  margin-bottom: 8%;
+}
+
+.ref,
+.ref:link,
+.ref:visited {
   text-decoration: none;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -26,14 +40,10 @@
   cursor: pointer;
 }
 
-.main-nav__link:hover,
-.main-nav__link:active {
+.ref:hover,
+.ref:active {
   font-weight: bolder;
   -webkit-transform: translateY(-2px);
   transform: translateY(-2px);
   text-shadow: 0 0.5rem 1rem black;
-}
-
-.navbar-collapse {
-  margin-left: 10px !important;
 }
