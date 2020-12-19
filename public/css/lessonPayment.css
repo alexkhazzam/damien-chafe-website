@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Playfair Display', serif;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.card {
+  display: inline-block !important;
+  text-align: center;
+  margin: 3%;
+  animation: 1.5s scroll-up-card;
+}
+
+.cards {
+  margin-top: 5%;
+  text-align: center;
+}
+
+.main-header {
+  text-align: center;
+  text-decoration: underline;
+  margin-top: 5%;
+}
+
+@keyframes scroll-up-card {
+  from {
+    margin-top: 100%;
+  }
+
+  to {
+    margin-top: 3%;
+  }
+}
+
+@media (max-width: 450px) {
+  .main-header {
+    margin-top: 25%;
+  }
+}

@@ -1,5 +1,5 @@
-const websiteNotifications = require('../models/websiteNotifications/websiteNotifications');
 const pings = require('../models/websiteNotifications/pingModel');
+const notifs = require('../models/websiteNotifications/websiteNotifications');
 
 exports.getHomePage = (req, res, next) => {
   const PingModel = new pings.pingModel();
@@ -8,8 +8,8 @@ exports.getHomePage = (req, res, next) => {
     websitePingCount: PingModel.fetchPings(),
   });
 
-  const websiteNotifications = new websiteNotifications.contactModel();
-  HomePageModel.sendEmail()
+  const WebsiteNotifications = new notifs.websiteNotifications();
+  WebsiteNotifications.sendEmail()
     .then((data) => {
       if (data) {
         console.log(data);

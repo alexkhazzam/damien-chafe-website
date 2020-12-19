@@ -18,11 +18,9 @@ body {
   width: 80%;
   box-shadow: 1px 1px 5px rgba(32, 32, 32, 0.87);
   margin: auto;
-}
-
-.tennis-experience {
   margin-top: 10% !important;
   margin-bottom: 10% !important;
+  animation: 1.5s scroll-up-experience !important;
 }
 
 .ref,
@@ -46,10 +44,6 @@ body {
   -webkit-transform: translateY(-2px);
   transform: translateY(-2px);
   text-shadow: 0 0.5rem 1rem black;
-}
-
-.experience {
-  animation: 1.5s scroll-up-experience;
 }
 
 @keyframes scroll-up-experience {

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/lessonPayment.css">
+    <script src="/javascript/lessonPayment.js" defer></script>
+    <%- include("./includes/bootstrap.ejs") %>
+</head>
+<body>
+    <%- include("./includes/navbar.ejs") %>
+    <div style="position: relative; border: 2px solid transparent;">
+        <div class="alert alert-info" role="alert" style="width: 195px; position: absolute; right: 10px; top: 10px;">
+            <a href="/leave-review" style="color: #0c5460;" class="review-link">Negotiate Prices<img src="https://img.icons8.com/flat_round/64/000000/arrow-right.png" width="30" height="30" style="margin-left: 5px;"/></a>
+          </div>
+        <h4 class="main-header"></h4>
+        <div class="cards">
+            <div class="card shadow-lg p-3 mb-5 bg-white rounded" style="width: 18rem;">
+                <img class="card-img-top" src="/assets/images/lesson-4.png" alt="Card image cap" height="300">
+                <div class="card-body">
+                  <h5 class="card-title">One Person</h5>
+                  <p class="card-text">$50/hour</p>
+                  <a href="#" class="btn btn-primary">Pay<img src="https://img.icons8.com/ios-glyphs/30/000000/pay.png" style="margin-left: 5px"/></a>
+                </div>
+              </div>
+              <div class="card shadow-lg p-3 mb-5 bg-white rounded" style="width: 18rem;">
+                <img class="card-img-top" src="/assets/images/lesson-1.png" alt="Card image cap" height="300">
+                <div class="card-body">
+                  <h5 class="card-title">Two People</h5>
+                  <p class="card-text">$25/person/hour</p>
+                  <a href="#" class="btn btn-primary">Pay<img src="https://img.icons8.com/ios-glyphs/30/000000/pay.png" style="margin-left: 5px"/></a>
+                </div>
+              </div>
+              <div class="card shadow-lg p-3 mb-5 bg-white rounded" style="width: 18rem;">
+                <img class="card-img-top" src="/assets/images/lesson-2.png" alt="Card image cap" height="300">
+                <div class="card-body">
+                  <h5 class="card-title">3-5 People</h5>
+                  <p class="card-text">$20/person/hour</p>
+                  <a href="#" class="btn btn-primary">Pay<img src="https://img.icons8.com/ios-glyphs/30/000000/pay.png" style="margin-left: 5px"/></a>
+                </div>
+              </div>
+              <div class="card shadow-lg p-3 mb-5 bg-white rounded" style="width: 18rem">
+                <img class="card-img-top" src="/assets/images/lesson-3.png" alt="Card image cap" height="275">
+                <div class="card-body">
+                  <h5 class="card-title">10 Lessons (1 person)</h5>
+                  <p class="card-text">$450 downpayment for 10 lessons </p>
+                  <a href="#" class="btn btn-primary">Pay<img src="https://img.icons8.com/ios-glyphs/30/000000/pay.png" style="margin-left: 5px"/></a>
+                </div>
+              </div>
+        </div>
+    </div>
+</body>
+</html>

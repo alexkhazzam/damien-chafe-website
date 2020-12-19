@@ -26,13 +26,13 @@ exports.websiteNotifications = class HandleForm {
     return promise;
   }
   async sendEmail() {
-    this.mailOptions = {
+    console.log('hi');
+    let mailOptions = {
       from: 'dcwebsitenotifications@gmail.com',
       to: 'dcwebsitenotifications@gmail.com',
       subject: 'Website Pinged!',
       text: 'Someone pinged our website.',
     };
-    let response = await this.wrappedSendMail(this.mailOptions);
-    return response;
+    return await this.wrappedSendMail(mailOptions);
   }
 };
