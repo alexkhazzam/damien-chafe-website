@@ -7,7 +7,7 @@ exports.pingModel = class PingModel {
     let pings;
 
     const pingData = fs.readFileSync(
-      path.join(__dirname, './', 'pings.json'),
+      path.join(__dirname, './data', 'pings.json'),
       'utf-8'
     );
     const parsedPings = [...JSON.parse(pingData)];
@@ -21,7 +21,7 @@ exports.pingModel = class PingModel {
   static writePing() {
     let ping;
     const pingData = fs.readFileSync(
-      path.join(__dirname, './', 'pings.json'),
+      path.join(__dirname, './data', 'pings.json'),
       'utf-8'
     );
     const parsedPings = [...JSON.parse(pingData)];
@@ -35,7 +35,7 @@ exports.pingModel = class PingModel {
     ];
 
     fs.writeFileSync(
-      path.join(__dirname, './', 'pings.json'),
+      path.join(__dirname, './data', 'pings.json'),
       JSON.stringify(newPing)
     );
   }
