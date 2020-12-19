@@ -5,7 +5,7 @@ const homeController = require('../controllers/homeController');
 const contactController = require('../controllers/contactController');
 const helpController = require('../controllers/helpController');
 const whyController = require('../controllers/whyController');
-const lessonPaymentController = require('../controllers/LessonPaymentController');
+const lessonPaymentController = require('../controllers/lessonPaymentController');
 const reviewController = require('../controllers/reviewController');
 const leaveReviewController = require('../controllers/leaveReviewController');
 

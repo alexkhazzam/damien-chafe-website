@@ -1,3 +1,1 @@
-exports.getLessonPaymentPage = (req, res, next) => {
-  res.render();
-};
+exports.getLessonPaymentPage = (req, res, next) => {};
