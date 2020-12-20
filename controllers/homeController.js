@@ -1,6 +1,6 @@
 const nodemon = require('nodemon');
 const pings = require('../models/websiteNotifications/pingModel');
-const notifs = require('../models/websiteNotifications/websiteNotifications');
+// const notifs = require('../models/websiteNotifications/websiteNotifications');
 
 exports.getHomePage = (req, res, next) => {
   const PingModel = new pings.pingModel();
