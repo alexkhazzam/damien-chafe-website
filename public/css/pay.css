@@ -12,6 +12,11 @@ html {
 body {
   height: 100%;
   width: 100%;
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(5, 141, 219, 0.85),
+    rgba(5, 166, 172, 0.85)
+  );
 }
 
 .payment-header {
@@ -19,12 +24,14 @@ body {
   text-align: center;
   text-decoration: underline;
   margin-bottom: 5%;
+  animation: 1.5s scroll-down-header;
 }
 
 .payment-information {
   text-align: center;
   width: 80%;
   margin: auto;
+  animation: 1.5s scroll-left-payment;
 }
 
 .payment-information span {
@@ -35,8 +42,55 @@ body {
   margin: auto;
 }
 
+.venmo-wrapper {
+  animation: 1.5s scroll-up-venmo;
+}
+
+.link,
+.link:link,
+.link:visited {
+  text-decoration: none;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.link:hover,
+.ink:active {
+  font-weight: bolder;
+  -webkit-transform: translateY(-2px);
+  transform: translateY(-2px);
+  text-shadow: 0 0.5rem 1rem black;
+}
+
 @media (max-width: 450px) {
   .payment-header {
     margin-top: 30%;
+  }
+}
+
+@keyframes scroll-up-venmo {
+  from {
+    margin-top: 100%;
+  }
+
+  to {
+    margin-top: 10%;
+  }
+}
+
+@keyframes scroll-left-payment {
+  from {
+    margin-left: 100%;
+  }
+
+  to {
+    margin-left: 10%;
   }
 }
