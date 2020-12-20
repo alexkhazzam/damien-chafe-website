@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Contact Information</title>
+    <%- include("./includes/bootstrap.ejs") %>
+    <link rel="stylesheet" href="/css/contact.css">
+</head>
+<body>
+    <%- include("./includes/navbar.ejs") %>
+    <ul class="nav nav-tabs" style="width: 80%; margin: auto; margin-top: 10%;"> 
+        <li class="nav-item">
+          <a class="nav-link" href="/contact">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style="color: black; border: 1px solid #dee2e6" href="/contact-information">My Contact Information</a>
+        </li>
+      </ul>
+      <div class="jumbotron google-form" style="width: 80%; margin: auto; margin-top: 10%;   box-shadow: 1px 1px 5px rgba(32, 32, 32, 0.87);
+      ">
+        <h1 class="display-4">Damien Chafe</h1>
+        <p class="lead">Senior at <a href="https://www.greatneck.k12.ny.us/NHS" class="ref" target="_blank">Great Neck North High School</a> | Class of 2021</p>
+        <hr class="my-4">
+       <p>Phone Number: <a href="tel:15162539046">123-456-7890</a></p>
+       <hr class="my-4">
+        <p>Email Address: <a style="color: #007bff;">bob@gmail.com</a></p>
+      </div>
+</body>
+</html>

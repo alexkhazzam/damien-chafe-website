@@ -10,7 +10,12 @@ const reviewController = require('../controllers/reviewController');
 const leaveReviewController = require('../controllers/leaveReviewController');
 const signUpController = require('../controllers/signUpController');
 const payController = require('../controllers/payController');
+const contactInformationController = require('../controllers/contactInformationController');
 
+Router.get(
+  '/contact-information',
+  contactInformationController.getContactInformationPage
+);
 Router.get('/pay-for-lesson', payController.getPayPage);
 Router.get('/', homeController.getHomePage);
 Router.get('/sign-up', signUpController.getSignUpPage);

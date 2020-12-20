@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <%- include("./includes/bootstrap.ejs") %>
+    <link rel="stylesheet" href="/css/contact.css">
+</head>
+<body>
+    <%- include("./includes/navbar.ejs") %>
+    <ul class="nav nav-tabs" style="width: 80%; margin: auto; margin-top: 10%;">
+        <li class="nav-item">
+          <a class="nav-link" style="color: black; border: 1px solid #dee2e6" href="#">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/contact-information">My Contact Information</a>
+        </li>
+    </ul>
+      <div style="text-align: center; margin-top: 10%; margin-bottom: 10%;" class="google-form">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdlJbeVJDhgyfieeWR3mNzy-LUD_3fLvfYOy0e0oK5uBqTTOA/viewform?embedded=true" width="640" height="2145" frameborder="0" marginheight="1000px" marginwidth="75%">Loading…</iframe>
+    </div>
+</body>
+</html>
