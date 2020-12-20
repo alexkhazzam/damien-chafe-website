@@ -19,18 +19,22 @@
     <div class="payment-information shadow-lg p-3 mb-5 bg-white rounded">
         <% if (people == 2 && price == 25) { %>
             <p>Lesson Type: <span>2 People</span></p>
-            <p>Price Per Person: <span>$25/Hour</span></p>
-            <p>Total Price: <span>($50) * (number of hours selected)</span></p>
+            <p>Lesson Duration: <span>60 Minutes</span></p>
+            <p>Price Per Person: <span>$25</span></p>
+            <p>Total Price: <span>$50</span></p>
         <% } else if (people == 5 && price == 20) { %>
             <p>Lesson Type: <span>3-5 People</span></p>
-            <p>Price Per Person: <span>$20/Hour</span></p>
+            <p>Lesson Duration: <span>60 Minutes</span></p>
+            <p>Price Per Person: <span>$20</span></p>
             <p>Total Price: <span>($20) * (number of people) * (number of hours selected)</span></p>
         <% } else if (people == 1 && price == 50) { %>
             <p>Lesson Type: <span>1 Person</span></p>
-            <p>Price Per Person: <span>$50/Hour</span></p>
-            <p>Total Price: <span>($50) * (number of hours selected)</span></p>
+            <p>Lesson Duration: <span>60 Minutes</span></p>
+            <p>Price Per Person: <span>$50</span></p>
+            <p>Total Price: <span>$50</span></p>
         <% } else { %>
             <p>Lesson Type: <span>10 Lessons (1 Person)</span></p>
+            <p>Lesson Duration: <span>60 Minutes</span></p>
             <p>Price Per Person: <span>$450 Downpayment</span></p>
             <p>Total Price: <span>$450</span></p>
         <% } %>
