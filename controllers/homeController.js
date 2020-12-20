@@ -1,3 +1,4 @@
+const nodemon = require('nodemon');
 const pings = require('../models/websiteNotifications/pingModel');
 const notifs = require('../models/websiteNotifications/websiteNotifications');
 
