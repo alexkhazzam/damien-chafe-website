@@ -8,10 +8,10 @@ const whyController = require('../controllers/whyController');
 const lessonPaymentController = require('../controllers/lessonPaymentController');
 const reviewController = require('../controllers/reviewController');
 const leaveReviewController = require('../controllers/leaveReviewController');
-const signUpController = require('../controllers/signUpController');
+// const signUpController = require('../controllers/signUpController');
 
 Router.get('/', homeController.getHomePage);
-Router.get('/sign-up', signUpController.getSignUpPage);
+// Router.get('/sign-up', signUpController.getSignUpPage);
 Router.get('/contact', contactController.getContactPage);
 Router.get('/help', helpController.getHelpPage);
 Router.get('/why', whyController.getWhyMePage);
