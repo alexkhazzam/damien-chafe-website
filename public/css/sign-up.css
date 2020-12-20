@@ -14,9 +14,13 @@ body {
   width: 100%;
 }
 
-.review-link,
-.review-link:link,
-.review-link:visited {
+.google-form {
+  animation: 1.5s scroll-up-google-form;
+}
+
+.link-payment,
+.link-payment:link,
+.link-payment:visited {
   text-decoration: none;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -29,19 +33,15 @@ body {
   cursor: pointer;
 }
 
-.review-link:hover,
-.review-link:active {
+.link-payment:hover,
+.link-payment:active {
   font-weight: bolder;
   -webkit-transform: translateY(-2px);
   transform: translateY(-2px);
   text-shadow: 0 0.5rem 1rem black;
 }
 
-.google-form {
-  animation: 1.5s scroll-up-form;
-}
-
-@keyframes scroll-up-form {
+@keyframes scroll-up-google-form {
   from {
     margin-top: 100%;
   }

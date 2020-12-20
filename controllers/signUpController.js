@@ -1,3 +1,3 @@
-// exports.getSignUpPage = (req, res, next) => {
-//   res.render('signUp', {});
-// };
+exports.getSignUpPage = (req, res, next) => {
+  res.render('signUp', {});
+};

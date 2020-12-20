@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Playfair Display', serif;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.payment-header {
+  margin-top: 15%;
+  text-align: center;
+  text-decoration: underline;
+  margin-bottom: 5%;
+}
+
+.payment-information {
+  text-align: center;
+  width: 80%;
+  margin: auto;
+}
+
+.payment-information span {
+  font-weight: bold;
+}
+
+.payment-information p {
+  margin: auto;
+}
+
+@media (max-width: 450px) {
+  .payment-header {
+    margin-top: 30%;
+  }
+}
