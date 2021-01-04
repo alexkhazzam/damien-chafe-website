@@ -11,7 +11,7 @@ exports.websiteNotifications = class HandleForm {
         requireTLS: true,
         auth: {
           user: 'dcwebsitenotifications@gmail.com',
-          pass: 'tennisfanatic',
+          pass: 'password',
         },
       });
       transporter.sendMail(mailOptions, (error, info) => {
